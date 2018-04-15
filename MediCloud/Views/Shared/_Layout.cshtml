@@ -1,16 +1,120 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - MediCloud</title>
     <base href="~/" />
 
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Porto - Responsive HTML5 Template">
+    <meta name="author" content="okler.net">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/asset/Template/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="~/asset/Template/img/apple-touch-icon.png">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="~/asset/Template/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/asset/Template/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/asset/Template/vendor/animate/animate.min.css">
+    <link rel="stylesheet" href="~/asset/Template/vendor/simple-line-icons/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="~/asset/Template/vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/asset/Template/vendor/owl.carousel/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/asset/Template/vendor/magnific-popup/magnific-popup.min.css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="~/asset/Template/css/theme.css">
+    <link rel="stylesheet" href="~/asset/Template/css/theme-elements.css">
+    <link rel="stylesheet" href="~/asset/Template/css/theme-blog.css">
+    <link rel="stylesheet" href="~/asset/Template/css/theme-shop.css">
+
+    <!-- Current Page CSS -->
+    <link rel="stylesheet" href="~/asset/Template/vendor/rs-plugin/css/settings.css">
+    <link rel="stylesheet" href="~/asset/Template/vendor/rs-plugin/css/layers.css">
+    <link rel="stylesheet" href="~/asset/Template/vendor/rs-plugin/css/navigation.css">
+    <link rel="stylesheet" href="~/asset/Template/vendor/nivo-slider/nivo-slider.css">
+    <link rel="stylesheet" href="~/asset/Template/vendor/nivo-slider/default/default.css">
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="~/asset/Template/css/skins/skin-construction.css">
+
+    <!-- Demo CSS -->
+    <link rel="stylesheet" href="~/asset/Template/css/demos/demo-construction.css">
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="~/asset/Template/css/custom.css">
+
+    <!-- Head Libs -->
+    <script src="~/asset/Template/vendor/modernizr/modernizr.min.js"></script>
+
     <link rel="stylesheet" href="~/dist/vendor.css" asp-append-version="true" />
 </head>
-<body>
+<body data-spy="scroll" data-target="#sidebar" data-offset="120">
     @RenderBody()
 
     @RenderSection("scripts", required: false)
+
+
+
+
+
+    <!-- Vendor -->
+    <script src="~/asset/Template/vendor/jquery/jquery.min.js"></script>
+    <script src="~/asset/Template/vendor/jquery.appear/jquery.appear.min.js"></script>
+    <script src="~/asset/Template/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="~/asset/Template/vendor/jquery-cookie/jquery-cookie.min.js"></script>
+    <script src="~/asset/Template/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/asset/Template/vendor/common/common.min.js"></script>
+    <script src="~/asset/Template/vendor/jquery.validation/jquery.validation.min.js"></script>
+    <script src="~/asset/Template/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+    <script src="~/asset/Template/vendor/jquery.gmap/jquery.gmap.min.js"></script>
+    <script src="~/asset/Template/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
+    <script src="~/asset/Template/vendor/isotope/jquery.isotope.min.js"></script>
+    <script src="~/asset/Template/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="~/asset/Template/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="~/asset/Template/vendor/vide/vide.min.js"></script>
+
+    <!-- Theme Base, Components and Settings -->
+    <script src="~/asset/Template/js/theme.js"></script>
+
+    <!-- Current Page Vendor and Views -->
+    <script src="~/asset/Template/vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+    <script src="~/asset/Template/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- Current Page Vendor and Views -->
+    <script src="~/asset/Template/vendor/nivo-slider/jquery.nivo.slider.min.js"></script>
+    <script src="~/asset/Template/js/views/view.contact.js"></script>
+
+    <!-- Demo -->
+    <script src="~/asset/Template/js/demos/demo-construction.js"></script>
+
+    <!-- Theme Custom -->
+    <script src="~/asset/Template/js/custom.js"></script>
+
+    <!-- Theme Initialization Files -->
+    <script src="~/asset/Template/js/theme.init.js"></script>
+
+
+
+
+    <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-12345678-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+     -->
 </body>
 </html>

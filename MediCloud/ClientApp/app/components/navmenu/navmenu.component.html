@@ -1,33 +1,72 @@
-<div class='main-nav'>
-    <div class='navbar navbar-inverse'>
-        <div class='navbar-header'>
-            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
-                <span class='sr-only'>Toggle navigation</span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-                <span class='icon-bar'></span>
-            </button>
-            <a class='navbar-brand' [routerLink]="['/home']">MediCloud</a>
-        </div>
-        <div class='clearfix'></div>
-        <div class='navbar-collapse collapse'>
-            <ul class='nav navbar-nav'>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/home']">
-                        <span class='glyphicon glyphicon-home'></span> Home
-                    </a>
-                </li>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/counter']">
-                        <span class='glyphicon glyphicon-education'></span> Counter
-                    </a>
-                </li>
-                <li [routerLinkActive]="['link-active']">
-                    <a [routerLink]="['/fetch-data']">
-                        <span class='glyphicon glyphicon-th-list'></span> Fetch data
-                    </a>
-                </li>
-            </ul>
+<header id="header" class="header-narrow header-semi-transparent-light header-flex" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyStartAt': 1, 'stickySetTop': '1'}">
+    <div class="header-body">
+        <div class="header-container container">
+            <div class="header-row">
+                <div class="header-column">
+                    <div class="header-logo">
+                        <img class="logo-default" alt="Porto" width="324" height="212" src="/asset/Template/img/demos/construction/logo-construction.png">
+                        <a href="demo-construction.html">
+                            <img class="logo-small" alt="Porto" width="131" height="48" src="/asset/Template/img/demos/construction/logo-construction-small.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-column">
+                    <div class="header-row">
+                        <div class="header-nav header-nav-stripe">
+                            <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <ul class="header-social-icons social-icons visible-lg">
+                                <li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                <li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            </ul>
+                            <div class="header-nav-main header-nav-main-square header-nav-main-effect-2 header-nav-main-sub-effect-1 collapse">
+                                <nav>
+                                    <ul class="nav nav-pills" id="mainNav">
+                                        <li class="active">
+                                            <a href="demo-construction.html">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="demo-construction-company.html">
+                                                Company
+                                            </a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" href="demo-construction-services.html">
+                                                Services
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="demo-construction-services-detail.html">Pre-Construction</a></li>
+                                                <li><a href="demo-construction-services-detail.html">General Construction</a></li>
+                                                <li><a href="demo-construction-services-detail.html">Plumbing</a></li>
+                                                <li><a href="demo-construction-services-detail.html">Painting</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="demo-construction-projects.html">
+                                                Projects
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="demo-construction-blog.html">
+                                                Blog
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="demo-construction-contact.html">
+                                                Contact
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+</header>
+
