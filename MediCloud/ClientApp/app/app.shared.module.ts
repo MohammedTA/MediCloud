@@ -10,6 +10,8 @@ import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { NavFooterComponent } from './components/navfooter/navfooter.component';
+import {AboutComponent } from "./components/about/about.component" ;
+import {CompanyComponent } from "./components/company/company.component" ;
 
 @NgModule({
     declarations: [
@@ -18,7 +20,9 @@ import { NavFooterComponent } from './components/navfooter/navfooter.component';
         CounterComponent,
         FetchDataComponent,
         HomeComponent,
-        NavFooterComponent
+        NavFooterComponent,
+        AboutComponent,
+        CompanyComponent
     ],
     imports: [
         CommonModule,
@@ -27,6 +31,8 @@ import { NavFooterComponent } from './components/navfooter/navfooter.component';
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
+            { path: 'about', component: AboutComponent },
+            { path: 'company', component: CompanyComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
             { path: '**', redirectTo: 'home' }
