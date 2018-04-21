@@ -12,6 +12,8 @@ import { CounterComponent } from './components/counter/counter.component';
 import { NavFooterComponent } from './components/navfooter/navfooter.component';
 import {AboutComponent } from "./components/about/about.component" ;
 import {CompanyComponent } from "./components/company/company.component" ;
+import {RegisterComponent } from "./components/register/register.component" ;
+import { IndividualComponent } from "./components/individual/individual.component" ;
 
 @NgModule({
     declarations: [
@@ -22,7 +24,9 @@ import {CompanyComponent } from "./components/company/company.component" ;
         HomeComponent,
         NavFooterComponent,
         AboutComponent,
-        CompanyComponent
+        CompanyComponent,
+        RegisterComponent,
+        IndividualComponent
     ],
     imports: [
         CommonModule,
@@ -33,7 +37,8 @@ import {CompanyComponent } from "./components/company/company.component" ;
             { path: 'home', component: HomeComponent },
             { path: 'about', component: AboutComponent },
             { path: 'company', component: CompanyComponent },
-            { path: 'counter', component: CounterComponent },
+            { path: 'individual', component: IndividualComponent },
+            { path: 'register', component: RegisterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
             { path: '**', redirectTo: 'home' }
         ])
