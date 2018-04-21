@@ -11,142 +11,74 @@
 
     <div class="container">
 
-        <div class="row pt-sm">
-            <div class="col-md-3">
-                <aside class="sidebar" id="sidebar" data-plugin-sticky data-plugin-options="{'minWidth': 991, 'containerSelector': '.container', 'padding': {'top': 110}}">
+        <div class="row pt-xl mb-xl">
+            <div class="col-md-7">
 
-                    <ul class="nav nav-list mb-xl show-bg-active">
-                        <li><a data-hash data-hash-offset="110" href="#who-we-are">Who We Are</a></li>
-                        <li><a data-hash data-hash-offset="110" href="#mission-vision">Mission &amp; Vision</a></li>
-                        <li><a data-hash data-hash-offset="110" href="#leadership">Leadership</a></li>
-                        <li><a data-hash data-hash-offset="110" href="#partners">Partners</a></li>
-                    </ul>
+                <h2 class="mb-none">Register</h2>
 
-                </aside>
-            </div>
-            <div class="col-md-9">
+                <p class="lead mb-xl mt-xs">Contact us or give us a call to discover how we can help.</p>
+                <p>
+                    Select your payment method <img width="100px" src="/asset/Template/img/demos/construction/visa.png" />
+                </p>
+                <div class="alert alert-success hidden mt-lg" id="contactSuccess">
+                    <strong>Success!</strong> Your message has been sent to us.
+                </div>
 
-                <section id="who-we-are" class="mb-xlg">
-                    <div class="nivo-slider mt-md pb-xl">
-                        <div class="slider-wrapper theme-default">
-                            <div id="nivoSlider" class="nivoSlider mt-none mb-xlg">
-                                <img src="/asset/Template/img/demos/construction/slides/slide-construction-small-1.jpg" data-thumb="/asset/Template/img/demos/construction/slides/slide-construction-small-1.jpg" alt="" />
-                            </div>
-                            <div id="htmlcaption" class="nivo-html-caption"></div>
-                        </div>
-                    </div>
-
-                    <h2 class="mb-none text-color-dark">Premium Company Profiles<br/>
-                        <span style="font-size: 18px;">Drive better job ad performance, by showcasing your company culture and values.</span></h2>
-                    <br/>
-                    <a href="#" class="btn btn-success">Register Now</a>
-                </section>
-
-                <hr class="solid tall">
-
-                <section id="mission-vision" class="mb-xlg">
-
-                    <div class="row mt-xl">
-                        <div class="col-sm-6 center">
-                            <div class="feature-box feature-box-style-4 mt-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="0">
-                                <span class="featured-boxes featured-boxes-style-4 p-none m-none">
-                                    <span class="featured-box featured-box-primary featured-box-effect-6 p-none m-none">
-                                        <span class="box-content p-none m-none">
-                                            <i class="icon-featured icon-home icons"></i>
-                                        </span>
-                                    </span>
-                                </span>
-                                <div class="feature-box-info">
-                                    <h2 class="mb-md text-color-dark">Add company information</h2>
-                                    <p class="mb-lg">To educate candidates on what it's like to work.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 center">
-                            <div class="feature-box feature-box-style-4 mt-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
-                                <span class="featured-boxes featured-boxes-style-4 p-none m-none">
-                                    <span class="featured-box featured-box-primary featured-box-effect-6 p-none m-none">
-                                        <span class="box-content p-none m-none">
-                                            <i class="icon-featured icon-notebook icons"></i>
-                                        </span>
-                                    </span>
-                                </span>
-                                <div class="feature-box-info">
-                                    <h2 class="mb-md text-color-dark">Upload photos and videos</h2>
-                                    <p class="mb-lg">To highlight your culture and work environment.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 center">
-                            <div class="feature-box feature-box-style-4 mt-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
-                                <span class="featured-boxes featured-boxes-style-4 p-none m-none">
-                                    <span class="featured-box featured-box-primary featured-box-effect-6 p-none m-none">
-                                        <span class="box-content p-none m-none">
-                                            <i class="icon-featured icon-target icons"></i>
-                                        </span>
-                                    </span>
-                                </span>
-                                <div class="feature-box-info">
-                                    <h2 class="mb-md text-color-dark">Showcase company reviews</h2>
-                                    <p class="mb-lg">To grow our business.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 center">
-                            <div class="feature-box feature-box-style-4 mt-xl appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="300">
-                                <span class="featured-boxes featured-boxes-style-4 p-none m-none">
-                                    <span class="featured-box featured-box-primary featured-box-effect-6 p-none m-none">
-                                        <span class="box-content p-none m-none">
-                                            <i class="icon-featured icon-user icons"></i>
-                                        </span>
-                                    </span>
-                                </span>
-                                <div class="feature-box-info">
-                                    <h2 class="mb-md text-color-dark">Link to social channels
-                                    </h2>
-                                    <p class="mb-lg">To drive ongoing engagement with candidates.</p>
-                                </div>
+                <div class="alert alert-danger hidden mt-lg" id="contactError">
+                    <strong>Error!</strong> There was an error sending your message.
+                    <span class="font-size-xs mt-sm display-block" id="mailErrorMessage"></span>
+                </div>
+                <form id="contactForm" action="php/contact-form.php" method="POST">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input type="text" placeholder="Your Name" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
                             </div>
                         </div>
                     </div>
-
-                </section>
-
-                <hr class="solid tall">
-
-                <section id="partners" class="mb-xlg">
-                    <h2 class="mb-none text-color-dark">Partners</h2>
-
-                    <div class="row mt-lg">
-                        <div class="content-grid content-grid-dashed mt-xlg mb-lg">
-                            <div class="row content-grid-row">
-                                <div class="content-grid-item col-sm-4 center">
-                                    <img class="img-responsive" src="/asset/Template/img/logos/logo-1.png" alt="">
-                                </div>
-                                <div class="content-grid-item col-sm-4 center">
-                                    <img class="img-responsive" src="/asset/Template/img/logos/logo-2.png" alt="">
-                                </div>
-                                <div class="content-grid-item col-sm-4 center">
-                                    <img class="img-responsive" src="/asset/Template/img/logos/logo-3.png" alt="">
-                                </div>
-                            </div>
-                            <div class="row content-grid-row">
-                                <div class="content-grid-item col-sm-4 center">
-                                    <img class="img-responsive" src="/asset/Template/img/logos/logo-4.png" alt="">
-                                </div>
-                                <div class="content-grid-item col-sm-4 center">
-                                    <img class="img-responsive" src="/asset/Template/img/logos/logo-5.png" alt="">
-                                </div>
-                                <div class="content-grid-item col-sm-4 center">
-                                    <img class="img-responsive" src="/asset/Template/img/logos/logo-6.png" alt="">
-                                </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input type="email" placeholder="Your E-mail" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
                             </div>
                         </div>
                     </div>
-                </section>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <input type="text" placeholder="Address" value="" data-msg-required="Please enter the address." maxlength="100" class="form-control" name="Address" id="subject" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <textarea maxlength="5000" placeholder="About Company" data-msg-required="tell us about your company." rows="5" class="form-control" name="about" id="about" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <input type="submit" value="Register" class="btn btn-primary mb-xlg" data-loading-text="Loading...">
+                        </div>
+                    </div>
+                </form>
 
             </div>
+            <div class="col-md-4 col-md-offset-1">
 
+                <h4 class="text-color-dark mb-xs pb-md">Contact Us</h4>
+
+                <!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
+                <div id="googlemaps" class="google-map small"></div>
+
+                <ul class="list list-icons mt-xlg mb-xlg">
+                    <li><i class="icon-pin icons"></i> <strong>Address:</strong> 1234 Street Name, City Name</li>
+                    <li><i class="icon-call-end icons"></i> <strong>Phone:</strong> (123) 456-789</li>
+                    <li><i class="icon-envelope icons"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></li>
+                </ul>
+
+            </div>
         </div>
 
     </div>
